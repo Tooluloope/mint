@@ -85,9 +85,9 @@ select {
 .select-wrapper::after {
 	content: "\f107";
 	font-family: "Font Awesome 5 Free";
-	font-weight: 900;
+	font-weight: 600;
 
-	color: #4e598c;
+	color: #7f8fa4;
 	padding: 9px 8px;
 	position: absolute;
 	right: 10px;
@@ -99,4 +99,12 @@ select {
 	pointer-events: none;
 	box-sizing: border-box;
 	min-width: 20px;
+}
+
+.select-wrapper select {
+	color: #7f8fa4;
+}
+
+.text-chart {
+	color: #7f8fa4;
 }
