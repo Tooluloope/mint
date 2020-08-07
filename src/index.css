@@ -108,3 +108,22 @@ select {
 .text-chart {
 	color: #7f8fa4;
 }
+
+.bg-table {
+	background: #eaeef0;
+	color: #7f8fa4;
+}
+
+/* table */
+
+.table-button {
+	position: absolute;
+	left: 10px;
+	width: 9px;
+	height: 9px;
+	margin-top: 5px;
+}
+
+.bg-blue-1000 {
+	background: #1875f0;
+}

@@ -1,6 +1,7 @@
 import React from "react";
 import { Chart } from "../components/graph/chart";
 import { Table } from "../components/table/table";
+import { Pagination } from "../components/table/pagination";
 
 export const Overview = () => {
 	return (
@@ -229,7 +230,72 @@ export const Overview = () => {
 				</div>
 			</div>
 
-			<Table />
+			<div className="mt-10">
+				<h2 className="text-3xl px-4">Payments</h2>
+
+				<div class=" px-4 md:flex items-center justify-between mt-3">
+					<div className="xl:flex justify-start items-center flex-grow">
+						<div className="mr-10 my-5 xl:my-0">
+							<p class="text-sm leading-5 text-black">
+								Showing
+								<select className="px-2 text-blue-color bg-transparent font-semibold">
+									<option>20</option>
+									<option>50</option>
+								</select>
+								to
+								<span class="font-medium px-1">10</span>
+								of
+								<span class="font-medium px-1">500</span>
+								entries
+							</p>
+						</div>
+						<div class="relative xl:mx-4 mx-0">
+							<span
+								style={{ top: "-5px" }}
+								class="absolute inset-y-0  left-0 pl-3 flex items-center"
+							>
+								<svg
+									class="h-5 w-5 text-gray-500 pb-1"
+									viewBox="0 0 24 24"
+									fill="none"
+								>
+									<path
+										d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+								</svg>
+							</span>
+
+							<input
+								class="form-input w-64 pl-12 pr-4 focus:outline-none  border-gray-400 border-b-2 pb-2 bg-transparent"
+								type="text"
+								placeholder="Search payments"
+							/>
+						</div>
+					</div>
+
+					<div className="inline-block relative bg-transparent select-wrapper my-5 md:my-0">
+						<p className="inline-block px-2">Show</p>
+						<select
+							type="text"
+							name="cardType"
+							className="  border bg-main-border py-2 bg-transparent rounded-md focus:outline-none pl-4 pr-16 "
+						>
+							<option>All</option>
+							<option>Reconciled</option>
+							<option>Un-reconciled</option>
+							<option>Settled</option>
+							<option>Unsettled</option>
+						</select>
+					</div>
+				</div>
+
+				<Table />
+				<Pagination />
+			</div>
 		</>
 	);
 };
