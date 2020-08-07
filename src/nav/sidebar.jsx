@@ -9,12 +9,12 @@ export const SideBar = ({ sidebarOpen }) => {
 					sidebarOpen ? "translate-x-0 ease-out" : "-translate-x-full ease-in"
 				}  fixed z-30 inset-y-0 left-0 w-64 transition duration-300 transform bg-white overflow-y-auto lg:translate-x-0 lg:static lg:inset-0 text-main-color`}
 			>
-				<div class="flex items-center justify-center shadow py-5 mt-1">
-					<span class=" text-logo-color mx-2 font-bold text-2xl">
+				<div className="flex items-center justify-center shadow py-5 mt-1">
+					<span className=" text-logo-color mx-2 font-bold text-2xl">
 						TransMonitor
 					</span>
 				</div>
-				<nav class="mt-10 text-center">
+				<nav className="mt-10 text-center">
 					<button
 						type="button"
 						className=" button-green-color px-6 py-2 text-center mt-5 text-white rounded-full font-bold text-sm"
@@ -26,9 +26,8 @@ export const SideBar = ({ sidebarOpen }) => {
 						<p className="px-6 text-left">Main</p>
 						<NavLink
 							exact
-							activeClassName="active"
 							to="/"
-							class="flex items-center mt-4 py-2 px-6 bg-nav text-main-color active"
+							className="flex items-center mt-4 py-2 px-6 bg-nav text-main-color active-nav "
 						>
 							<svg
 								width="20"
@@ -43,15 +42,14 @@ export const SideBar = ({ sidebarOpen }) => {
 								/>
 							</svg>
 
-							<span class="mx-4 text-xs ">Dashboard</span>
+							<span className="mx-4 text-xs ">Dashboard</span>
 						</NavLink>
 					</div>
 					<div className="mt-8 text-sm">
 						<p className="px-6 text-left">Payments</p>
 						<NavLink
-							activeClassName="active bg-blue"
 							to="#"
-							class="flex items-center py-2 px-6 bg-nav text-main-color  hover"
+							className="flex items-center py-2 px-6 bg-nav text-main-color  hover"
 						>
 							<svg
 								width="19"
@@ -63,30 +61,29 @@ export const SideBar = ({ sidebarOpen }) => {
 								<path
 									d="M16.4286 9.00001V4.42858H13H5.57143H2.71429C1.76743 4.42858 1 3.66115 1 2.71429V14.7143C1 15.9766 2.02343 17 3.28571 17H16.4286V12.4286"
 									stroke="#7F8FA4"
-									stroke-miterlimit="10"
-									stroke-linecap="square"
+									strokeMiterlimit="10"
+									strokeLinecap="square"
 								/>
 								<path
 									d="M18.1429 12.4286H14.1429C13.196 12.4286 12.4286 11.6611 12.4286 10.7143C12.4286 9.76743 13.196 9 14.1429 9H18.1429V12.4286Z"
 									stroke="#7F8FA4"
-									stroke-miterlimit="10"
-									stroke-linecap="square"
+									strokeMiterlimit="10"
+									strokeLinecap="square"
 								/>
 								<path
 									d="M13 2.14286V1H2.71429C1.76743 1 1 1.76743 1 2.71429C1 3.66114 1.76743 4.42857 2.71429 4.42857"
 									stroke="#7F8FA4"
-									stroke-miterlimit="10"
-									stroke-linecap="square"
+									strokeMiterlimit="10"
+									strokeLinecap="square"
 								/>
 							</svg>
 
-							<span class="mx-4 text-xs ">All Payments</span>
+							<span className="mx-4 text-xs ">All Payments</span>
 						</NavLink>
 
 						<NavLink
-							activeClassName="active bg-blue"
 							to="#"
-							class="flex items-center py-2 px-6 bg-nav text-main-color  hover"
+							className="flex items-center py-2 px-6 bg-nav text-main-color  hover"
 						>
 							<svg
 								width="19"
@@ -98,14 +95,14 @@ export const SideBar = ({ sidebarOpen }) => {
 								<path
 									d="M16.4286 9.00001V4.42858H13H5.57143H2.71429C1.76743 4.42858 1 3.66115 1 2.71429V14.7143C1 15.9766 2.02343 17 3.28571 17H16.4286V12.4286"
 									stroke="#647787"
-									stroke-miterlimit="10"
-									stroke-linecap="square"
+									strokeMiterlimit="10"
+									strokeLinecap="square"
 								/>
 								<path
 									d="M18.1429 12.4286H14.1429C13.196 12.4286 12.4286 11.6611 12.4286 10.7143C12.4286 9.76743 13.196 9 14.1429 9H18.1429V12.4286Z"
 									stroke="#647787"
-									stroke-miterlimit="10"
-									stroke-linecap="square"
+									strokeMiterlimit="10"
+									strokeLinecap="square"
 								/>
 								<circle
 									cx="12.5"
@@ -121,17 +118,16 @@ export const SideBar = ({ sidebarOpen }) => {
 								<path
 									d="M13 2.14286V1H2.71429C1.76743 1 1 1.76743 1 2.71429C1 3.66114 1.76743 4.42857 2.71429 4.42857"
 									stroke="#647787"
-									stroke-miterlimit="10"
-									stroke-linecap="square"
+									strokeMiterlimit="10"
+									strokeLinecap="square"
 								/>
 							</svg>
 
-							<span class="mx-4 text-xs ">Reconciled Payments</span>
+							<span className="mx-4 text-xs ">Reconciled Payments</span>
 						</NavLink>
 						<NavLink
-							activeClassName="active bg-blue"
 							to="#"
-							class="flex items-center py-2 px-6 bg-nav text-main-color  hover"
+							className="flex items-center py-2 px-6 bg-nav text-main-color  hover"
 						>
 							<svg
 								width="19"
@@ -143,14 +139,14 @@ export const SideBar = ({ sidebarOpen }) => {
 								<path
 									d="M16.4286 9.00001V4.42858H13H5.57143H2.71429C1.76743 4.42858 1 3.66115 1 2.71429V14.7143C1 15.9766 2.02343 17 3.28571 17H16.4286V12.4286"
 									stroke="#647787"
-									stroke-miterlimit="10"
-									stroke-linecap="square"
+									strokeMiterlimit="10"
+									strokeLinecap="square"
 								/>
 								<path
 									d="M18.1429 12.4286H14.1429C13.196 12.4286 12.4286 11.6611 12.4286 10.7143C12.4286 9.76743 13.196 9 14.1429 9H18.1429V12.4286Z"
 									stroke="#647787"
-									stroke-miterlimit="10"
-									stroke-linecap="square"
+									strokeMiterlimit="10"
+									strokeLinecap="square"
 								/>
 								<circle
 									cx="12.5"
@@ -164,18 +160,17 @@ export const SideBar = ({ sidebarOpen }) => {
 								<path
 									d="M13 2.14286V1H2.71429C1.76743 1 1 1.76743 1 2.71429C1 3.66114 1.76743 4.42857 2.71429 4.42857"
 									stroke="#647787"
-									stroke-miterlimit="10"
-									stroke-linecap="square"
+									strokeMiterlimit="10"
+									strokeLinecap="square"
 								/>
 							</svg>
 
-							<span class="mx-4 text-xs ">Un-Reconciled Payments</span>
+							<span className="mx-4 text-xs ">Un-Reconciled Payments</span>
 						</NavLink>
 
 						<NavLink
-							activeClassName="active bg-blue"
 							to="#"
-							class="flex items-center py-2 px-6 bg-nav text-main-color  hover"
+							className="flex items-center py-2 px-6 bg-nav text-main-color  hover"
 						>
 							<svg
 								width="16"
@@ -194,16 +189,15 @@ export const SideBar = ({ sidebarOpen }) => {
 								/>
 							</svg>
 
-							<span class="mx-4 text-xs ">Manual Settlement</span>
+							<span className="mx-4 text-xs ">Manual Settlement</span>
 						</NavLink>
 					</div>
 
 					<div className="mt-8 text-sm">
 						<p className="px-6 text-left">Orders</p>
 						<NavLink
-							activeClassName="active bg-blue"
 							to="#"
-							class="flex items-center py-2 px-6 bg-nav text-main-color  hover"
+							className="flex items-center py-2 px-6 bg-nav text-main-color  hover"
 						>
 							<svg
 								width="17"
@@ -215,52 +209,52 @@ export const SideBar = ({ sidebarOpen }) => {
 								<path
 									d="M3.18182 14.0909V1H16.2727V14.0909C16.2727 14.8624 15.9662 15.6024 15.4207 16.1479C14.8751 16.6935 14.1352 17 13.3636 17"
 									stroke="#647787"
-									stroke-miterlimit="10"
-									stroke-linecap="round"
-									stroke-linejoin="round"
+									strokeMiterlimit="10"
+									strokeLinecap="round"
+									strokeLinejoin="round"
 								/>
 								<path
 									d="M10.4545 14.0909H1C1 14.8625 1.30649 15.6024 1.85205 16.1479C2.39761 16.6935 3.13755 17 3.90909 17H13.3636C12.5921 17 11.8522 16.6935 11.3066 16.1479C10.761 15.6024 10.4545 14.8625 10.4545 14.0909Z"
 									stroke="#647787"
-									stroke-miterlimit="10"
-									stroke-linecap="round"
-									stroke-linejoin="round"
+									strokeMiterlimit="10"
+									strokeLinecap="round"
+									strokeLinejoin="round"
 								/>
 								<path
 									d="M9 7.54544H13.3636"
 									stroke="#647787"
-									stroke-miterlimit="10"
-									stroke-linejoin="round"
+									strokeMiterlimit="10"
+									strokeLinejoin="round"
 								/>
 								<path
 									d="M6.09088 7.54544H7.54543"
 									stroke="#647787"
-									stroke-miterlimit="10"
-									stroke-linejoin="round"
+									strokeMiterlimit="10"
+									strokeLinejoin="round"
 								/>
 								<path
 									d="M9 10.4546H13.3636"
 									stroke="#647787"
-									stroke-miterlimit="10"
-									stroke-linejoin="round"
+									strokeMiterlimit="10"
+									strokeLinejoin="round"
 								/>
 								<path
 									d="M6.09088 10.4546H7.54543"
 									stroke="#647787"
-									stroke-miterlimit="10"
-									stroke-linejoin="round"
+									strokeMiterlimit="10"
+									strokeLinejoin="round"
 								/>
 								<path
 									d="M9 4.63635H13.3636"
 									stroke="#647787"
-									stroke-miterlimit="10"
-									stroke-linejoin="round"
+									strokeMiterlimit="10"
+									strokeLinejoin="round"
 								/>
 								<path
 									d="M6.09088 4.63635H7.54543"
 									stroke="#647787"
-									stroke-miterlimit="10"
-									stroke-linejoin="round"
+									strokeMiterlimit="10"
+									strokeLinejoin="round"
 								/>
 								<path
 									d="M9.9914 14.5909C10.0979 15.3094 10.4321 15.9799 10.9515 16.5H3.90909C3.27016 16.5 2.6574 16.2462 2.20561 15.7944C1.87356 15.4623 1.64845 15.0433 1.55245 14.5909H9.9914Z"
@@ -269,13 +263,12 @@ export const SideBar = ({ sidebarOpen }) => {
 								/>
 							</svg>
 
-							<span class="mx-4 text-xs ">All Orders</span>
+							<span className="mx-4 text-xs ">All Orders</span>
 						</NavLink>
 
 						<NavLink
-							activeClassName="active bg-blue"
 							to="#"
-							class="flex items-center py-2 px-6 bg-nav text-main-color  hover"
+							className="flex items-center py-2 px-6 bg-nav text-main-color  hover"
 						>
 							<svg
 								width="21"
@@ -287,52 +280,52 @@ export const SideBar = ({ sidebarOpen }) => {
 								<path
 									d="M3.18182 14.0909V1H16.2727V14.0909C16.2727 14.8624 15.9662 15.6024 15.4207 16.1479C14.8751 16.6935 14.1352 17 13.3636 17"
 									stroke="#647787"
-									stroke-miterlimit="10"
-									stroke-linecap="round"
-									stroke-linejoin="round"
+									strokeMiterlimit="10"
+									strokeLinecap="round"
+									strokeLinejoin="round"
 								/>
 								<path
 									d="M10.4545 14.0909H1C1 14.8625 1.30649 15.6024 1.85205 16.1479C2.39761 16.6935 3.13755 17 3.90909 17H13.3636C12.5921 17 11.8522 16.6935 11.3066 16.1479C10.761 15.6024 10.4545 14.8625 10.4545 14.0909Z"
 									stroke="#647787"
-									stroke-miterlimit="10"
-									stroke-linecap="round"
-									stroke-linejoin="round"
+									strokeMiterlimit="10"
+									strokeLinecap="round"
+									strokeLinejoin="round"
 								/>
 								<path
 									d="M9 7.54544H13.3636"
 									stroke="#647787"
-									stroke-miterlimit="10"
-									stroke-linejoin="round"
+									strokeMiterlimit="10"
+									strokeLinejoin="round"
 								/>
 								<path
 									d="M6.09088 7.54544H7.54543"
 									stroke="#647787"
-									stroke-miterlimit="10"
-									stroke-linejoin="round"
+									strokeMiterlimit="10"
+									strokeLinejoin="round"
 								/>
 								<path
 									d="M9 10.4546H13.3636"
 									stroke="#647787"
-									stroke-miterlimit="10"
-									stroke-linejoin="round"
+									strokeMiterlimit="10"
+									strokeLinejoin="round"
 								/>
 								<path
 									d="M6.09088 10.4546H7.54543"
 									stroke="#647787"
-									stroke-miterlimit="10"
-									stroke-linejoin="round"
+									strokeMiterlimit="10"
+									strokeLinejoin="round"
 								/>
 								<path
 									d="M9 4.63635H13.3636"
 									stroke="#647787"
-									stroke-miterlimit="10"
-									stroke-linejoin="round"
+									strokeMiterlimit="10"
+									strokeLinejoin="round"
 								/>
 								<path
 									d="M6.09088 4.63635H7.54543"
 									stroke="#647787"
-									stroke-miterlimit="10"
-									stroke-linejoin="round"
+									strokeMiterlimit="10"
+									strokeLinejoin="round"
 								/>
 								<path
 									d="M9.9914 14.5909C10.0979 15.3094 10.4321 15.9799 10.9515 16.5H3.90909C3.27016 16.5 2.6574 16.2462 2.20561 15.7944C1.87356 15.4623 1.64845 15.0433 1.55245 14.5909H9.9914Z"
@@ -349,22 +342,21 @@ export const SideBar = ({ sidebarOpen }) => {
 								<path
 									d="M16.875 6.75V12.25"
 									stroke="#647787"
-									stroke-width="0.75"
+									strokeWidth="0.75"
 								/>
 								<path
 									d="M14.125 6.75V12.25"
 									stroke="#647787"
-									stroke-width="0.75"
+									strokeWidth="0.75"
 								/>
 							</svg>
 
-							<span class="mx-4 text-xs ">Pending Orders</span>
+							<span className="mx-4 text-xs ">Pending Orders</span>
 						</NavLink>
 
 						<NavLink
-							activeClassName="active bg-blue"
 							to="#"
-							class="flex items-center py-2 px-6 bg-nav text-main-color  hover"
+							className="flex items-center py-2 px-6 bg-nav text-main-color  hover"
 						>
 							<svg
 								width="22"
@@ -376,52 +368,52 @@ export const SideBar = ({ sidebarOpen }) => {
 								<path
 									d="M3.18182 14.0909V1H16.2727V14.0909C16.2727 14.8624 15.9662 15.6024 15.4207 16.1479C14.8751 16.6935 14.1352 17 13.3636 17"
 									stroke="#647787"
-									stroke-miterlimit="10"
-									stroke-linecap="round"
-									stroke-linejoin="round"
+									strokeMiterlimit="10"
+									strokeLinecap="round"
+									strokeLinejoin="round"
 								/>
 								<path
 									d="M10.4545 14.0909H1C1 14.8625 1.30649 15.6024 1.85205 16.1479C2.39761 16.6935 3.13755 17 3.90909 17H13.3636C12.5921 17 11.8522 16.6935 11.3066 16.1479C10.761 15.6024 10.4545 14.8625 10.4545 14.0909Z"
 									stroke="#647787"
-									stroke-miterlimit="10"
-									stroke-linecap="round"
-									stroke-linejoin="round"
+									strokeMiterlimit="10"
+									strokeLinecap="round"
+									strokeLinejoin="round"
 								/>
 								<path
 									d="M9 7.54546H13.3636"
 									stroke="#647787"
-									stroke-miterlimit="10"
-									stroke-linejoin="round"
+									strokeMiterlimit="10"
+									strokeLinejoin="round"
 								/>
 								<path
 									d="M6.09088 7.54546H7.54543"
 									stroke="#647787"
-									stroke-miterlimit="10"
-									stroke-linejoin="round"
+									strokeMiterlimit="10"
+									strokeLinejoin="round"
 								/>
 								<path
 									d="M9 10.4545H13.3636"
 									stroke="#647787"
-									stroke-miterlimit="10"
-									stroke-linejoin="round"
+									strokeMiterlimit="10"
+									strokeLinejoin="round"
 								/>
 								<path
 									d="M6.09088 10.4545H7.54543"
 									stroke="#647787"
-									stroke-miterlimit="10"
-									stroke-linejoin="round"
+									strokeMiterlimit="10"
+									strokeLinejoin="round"
 								/>
 								<path
 									d="M9 4.63637H13.3636"
 									stroke="#647787"
-									stroke-miterlimit="10"
-									stroke-linejoin="round"
+									strokeMiterlimit="10"
+									strokeLinejoin="round"
 								/>
 								<path
 									d="M6.09088 4.63637H7.54543"
 									stroke="#647787"
-									stroke-miterlimit="10"
-									stroke-linejoin="round"
+									strokeMiterlimit="10"
+									strokeLinejoin="round"
 								/>
 								<path
 									d="M9.9914 14.5909C10.0979 15.3094 10.4321 15.9799 10.9515 16.5H3.90909C3.27016 16.5 2.6574 16.2462 2.20561 15.7944C1.87356 15.4623 1.64845 15.0433 1.55245 14.5909H9.9914Z"
@@ -441,14 +433,13 @@ export const SideBar = ({ sidebarOpen }) => {
 								/>
 							</svg>
 
-							<span class="mx-4 text-xs ">Reconciled Orders</span>
+							<span className="mx-4 text-xs ">Reconciled Orders</span>
 						</NavLink>
 					</div>
 
 					<NavLink
-						activeClassName="active bg-blue"
 						to="#"
-						class="flex items-center py-2 px-6 bg-nav text-main-color  hover mt-6"
+						className="flex items-center py-2 px-6 bg-nav text-main-color  hover mt-6"
 					>
 						<svg
 							width="17"
@@ -460,23 +451,22 @@ export const SideBar = ({ sidebarOpen }) => {
 							<path
 								d="M8.27272 9C6.26472 9 4.63635 7.37164 4.63635 5.36364V4.63636C4.63635 2.62836 6.26472 1 8.27272 1C10.2807 1 11.9091 2.62836 11.9091 4.63636V5.36364C11.9091 7.37164 10.2807 9 8.27272 9Z"
 								stroke="#647787"
-								stroke-miterlimit="10"
-								stroke-linecap="square"
+								strokeMiterlimit="10"
+								strokeLinecap="square"
 							/>
 							<path
 								d="M15.5455 15.4785C15.5455 14.1695 14.6749 13.0182 13.4116 12.6742C12.0342 12.2982 10.1535 11.9091 8.27273 11.9091C6.392 11.9091 4.51127 12.2982 3.13382 12.6742C1.87055 13.0182 1 14.1695 1 15.4785V17H15.5455V15.4785Z"
 								stroke="#647787"
-								stroke-miterlimit="10"
-								stroke-linecap="square"
+								strokeMiterlimit="10"
+								strokeLinecap="square"
 							/>
 						</svg>
 
-						<span class="mx-4 text-xs ">Merchant Profile</span>
+						<span className="mx-4 text-xs ">Merchant Profile</span>
 					</NavLink>
 					<NavLink
-						activeClassName="active bg-blue"
 						to="#"
-						class="flex items-center py-2 px-6 bg-nav text-main-color  hover  md:hidden"
+						className="flex items-center py-2 px-6 bg-nav text-main-color  hover  md:hidden"
 					>
 						<svg
 							width="17"
@@ -488,23 +478,22 @@ export const SideBar = ({ sidebarOpen }) => {
 							<path
 								d="M8.27272 9C6.26472 9 4.63635 7.37164 4.63635 5.36364V4.63636C4.63635 2.62836 6.26472 1 8.27272 1C10.2807 1 11.9091 2.62836 11.9091 4.63636V5.36364C11.9091 7.37164 10.2807 9 8.27272 9Z"
 								stroke="#647787"
-								stroke-miterlimit="10"
-								stroke-linecap="square"
+								strokeMiterlimit="10"
+								strokeLinecap="square"
 							/>
 							<path
 								d="M15.5455 15.4785C15.5455 14.1695 14.6749 13.0182 13.4116 12.6742C12.0342 12.2982 10.1535 11.9091 8.27273 11.9091C6.392 11.9091 4.51127 12.2982 3.13382 12.6742C1.87055 13.0182 1 14.1695 1 15.4785V17H15.5455V15.4785Z"
 								stroke="#647787"
-								stroke-miterlimit="10"
-								stroke-linecap="square"
+								strokeMiterlimit="10"
+								strokeLinecap="square"
 							/>
 						</svg>
 
-						<span class="mx-4 text-xs ">Support</span>
+						<span className="mx-4 text-xs ">Support</span>
 					</NavLink>
 					<NavLink
-						activeClassName="active bg-blue"
 						to="#"
-						class="flex items-center py-2 px-6 bg-nav text-main-color  hover  md:hidden"
+						className="flex items-center py-2 px-6 bg-nav text-main-color  hover  md:hidden"
 					>
 						<svg
 							width="17"
@@ -516,18 +505,18 @@ export const SideBar = ({ sidebarOpen }) => {
 							<path
 								d="M8.27272 9C6.26472 9 4.63635 7.37164 4.63635 5.36364V4.63636C4.63635 2.62836 6.26472 1 8.27272 1C10.2807 1 11.9091 2.62836 11.9091 4.63636V5.36364C11.9091 7.37164 10.2807 9 8.27272 9Z"
 								stroke="#647787"
-								stroke-miterlimit="10"
-								stroke-linecap="square"
+								strokeMiterlimit="10"
+								strokeLinecap="square"
 							/>
 							<path
 								d="M15.5455 15.4785C15.5455 14.1695 14.6749 13.0182 13.4116 12.6742C12.0342 12.2982 10.1535 11.9091 8.27273 11.9091C6.392 11.9091 4.51127 12.2982 3.13382 12.6742C1.87055 13.0182 1 14.1695 1 15.4785V17H15.5455V15.4785Z"
 								stroke="#647787"
-								stroke-miterlimit="10"
-								stroke-linecap="square"
+								strokeMiterlimit="10"
+								strokeLinecap="square"
 							/>
 						</svg>
 
-						<span class="mx-4 text-xs ">FAQ</span>
+						<span className="mx-4 text-xs ">FAQ</span>
 					</NavLink>
 				</nav>
 			</div>

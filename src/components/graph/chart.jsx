@@ -21,11 +21,11 @@ export const Chart = () => {
 					</div>
 					<div className="flex justify-between text-chart">
 						<button className="chart-button mx-2">
-							<i class="fas fa-angle-left"></i>
+							<i className="fas fa-angle-left"></i>
 						</button>
 
 						<button className="chart-button mx-2">
-							<i class="fas fa-angle-right"></i>
+							<i className="fas fa-angle-right"></i>
 						</button>
 					</div>
 				</div>
