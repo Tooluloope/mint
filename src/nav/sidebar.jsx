@@ -9,7 +9,7 @@ export const SideBar = ({ sidebarOpen }) => {
 					sidebarOpen ? "translate-x-0 ease-out" : "-translate-x-full ease-in"
 				}  fixed z-30 inset-y-0 left-0 w-64 transition duration-300 transform bg-white overflow-y-auto lg:translate-x-0 lg:static lg:inset-0 text-main-color`}
 			>
-				<div className="flex items-center justify-center shadow py-5 mt-1">
+				<div className="flex items-center justify-center header-shadow pb-6 mt-1 pt-4 ">
 					<span className=" text-logo-color mx-2 font-bold text-2xl">
 						TransMonitor
 					</span>

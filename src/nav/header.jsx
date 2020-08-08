@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export const Header = ({ setSidebarOpen }) => {
 	return (
-		<header className=" py-4  bg-white h-20 ">
+		<header className=" py-4  bg-white h-20 header-shadow">
 			<div className="container mx-auto flex justify-between items-center px-6">
 				<div className="flex items-center">
 					<button
@@ -44,14 +44,14 @@ export const Header = ({ setSidebarOpen }) => {
 						</span>
 
 						<input
-							className="form-input w-32 sm:w-64 rounded-md pl-12 pr-4 focus:outline-none  focus:border-gray-400 focus:border py-3"
+							className="form-input w-32 sm:w-64 rounded-md pl-12 pr-4 focus:outline-none  focus:border-gray-400 focus:border py-3 text-sm"
 							type="text"
 							placeholder="Search..."
 						/>
 					</div>
 				</div>
 				<div className="flex items-center justify-evenly text-main-color">
-					<div className="md:flex hidden ">
+					<div className="md:flex hidden items-center">
 						<Link to="" className="text-sm mr-8">
 							Support
 						</Link>
@@ -59,7 +59,7 @@ export const Header = ({ setSidebarOpen }) => {
 							FAQ
 						</Link>
 					</div>
-					<button className="flex mx-4 text-gray-600 focus:outline-none md:mr-8">
+					<button className="flex items-center mx-4 text-gray-600 focus:outline-none md:mr-8">
 						<svg
 							className="h-6 w-6"
 							viewBox="0 0 24 24"

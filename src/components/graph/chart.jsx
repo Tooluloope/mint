@@ -9,11 +9,12 @@ export const Chart = () => {
 				</h1>
 
 				<div className="flex justify-between items-center mt-3 sm:mt-0">
-					<div className="inline-block relative bg-transparent select-wrapper mr-10">
+					<div className="inline-block relative bg-transparent select-wrapper mr-10 chart-select">
 						<select
+							style={{ paddingTop: "0.35rem", paddingBottom: "0.35rem" }}
 							type="text"
 							name="cardType"
-							className="  border bg-main-border py-2 bg-white rounded-md focus:outline-none pl-4 pr-16"
+							className="  border bg-main-border py-1 bg-white rounded-md focus:outline-none pl-4 pr-16 text-xs"
 						>
 							<option value="visa">1 Jan - 1 Jun </option>
 							<option value="masterCard">Master Card</option>

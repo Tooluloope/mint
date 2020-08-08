@@ -38,7 +38,7 @@ export const Table = () => {
 										</div>
 
 										<div className="ml-4">
-											<div className="text-sm leading-5 font-medium text-table-color">
+											<div className="text-sm leading-5 text-table-color">
 												Apple Mac Book 15” 250 SSD 12GB
 											</div>
 										</div>
@@ -84,7 +84,7 @@ export const Table = () => {
 										</div>
 
 										<div className="ml-4">
-											<div className="text-sm leading-5 font-medium text-table-color">
+											<div className="text-sm leading-5 text-table-color">
 												Apple Mac Book 15” 250 SSD 12GB
 											</div>
 										</div>
@@ -130,7 +130,7 @@ export const Table = () => {
 										</div>
 
 										<div className="ml-4">
-											<div className="text-sm leading-5 font-medium text-table-color">
+											<div className="text-sm leading-5 text-table-color">
 												Apple Mac Book 15” 250 SSD 12GB
 											</div>
 										</div>
@@ -176,7 +176,7 @@ export const Table = () => {
 										</div>
 
 										<div className="ml-4">
-											<div className="text-sm leading-5 font-medium text-table-color">
+											<div className="text-sm leading-5 text-table-color">
 												Apple Mac Book 15” 250 SSD 12GB
 											</div>
 										</div>
@@ -222,7 +222,7 @@ export const Table = () => {
 										</div>
 
 										<div className="ml-4">
-											<div className="text-sm leading-5 font-medium text-table-color">
+											<div className="text-sm leading-5 text-table-color">
 												Apple Mac Book 15” 250 SSD 12GB
 											</div>
 										</div>
@@ -268,7 +268,7 @@ export const Table = () => {
 										</div>
 
 										<div className="ml-4">
-											<div className="text-sm leading-5 font-medium text-table-color">
+											<div className="text-sm leading-5 text-table-color">
 												Apple Mac Book 15” 250 SSD 12GB
 											</div>
 										</div>
@@ -314,7 +314,7 @@ export const Table = () => {
 										</div>
 
 										<div className="ml-4">
-											<div className="text-sm leading-5 font-medium text-table-color">
+											<div className="text-sm leading-5 text-table-color">
 												Apple Mac Book 15” 250 SSD 12GB
 											</div>
 										</div>
@@ -360,7 +360,7 @@ export const Table = () => {
 										</div>
 
 										<div className="ml-4">
-											<div className="text-sm leading-5 font-medium text-table-color">
+											<div className="text-sm leading-5 text-table-color">
 												Apple Mac Book 15” 250 SSD 12GB
 											</div>
 										</div>
